@@ -40,12 +40,12 @@ def compare_files(path_old, path_new, path_total):
 layout = [
 
     [sg.Text('Путь к старому файлу Excel:', size=(35, 1), auto_size_text=False, justification='left'),
-     sg.InputText('Остатки для Семена 20210714.xlsx', size=(64, 1)), sg.FileBrowse(file_types=(("Excel files", "*.xlsx")))],
+     sg.InputText('Остатки для Семена 20210714.xlsx', size=(64, 1)), sg.FileBrowse(file_types=(("Excel files", "*.xlsx"),))],
     [sg.Text('Путь к новому файлу Excel:', size=(35, 1), auto_size_text=False, justification='left'),
-     sg.InputText('Остатки для Семена 20210723.xlsx', size=(64, 1)), sg.FileBrowse(file_types=(("Excel files", "*.xlsx")))],
+     sg.InputText('Остатки для Семена 20210723.xlsx', size=(64, 1)), sg.FileBrowse(file_types=(("Excel files", "*.xlsx"),))],
     [sg.Text('Путь к итоговому файлу Excel:', size=(35, 1), auto_size_text=False, justification='left'),
      sg.InputText('Разницы.xlsx', size=(64, 1)),
-     sg.FileBrowse(file_types=(("Excel files", "*.xlsx")))],
+     sg.FileBrowse(file_types=(("Excel files", "*.xlsx"),))],
 
     [sg.Button('Сравнить файлы', key=f'btnRefresh', size=(22, 1))],
 
